@@ -10,10 +10,33 @@
 		52D56F4A761C4A9A2E807C89 /* Pods_KocSistemDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BBE9BD3DE75EEDEF7558ED /* Pods_KocSistemDemo.framework */; };
 		EA8208E9280AC602003975F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208E8280AC602003975F4 /* AppDelegate.swift */; };
 		EA8208EB280AC602003975F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208EA280AC602003975F4 /* SceneDelegate.swift */; };
-		EA8208ED280AC602003975F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208EC280AC602003975F4 /* ViewController.swift */; };
+		EA8208ED280AC602003975F4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208EC280AC602003975F4 /* FirstViewController.swift */; };
 		EA8208F0280AC602003975F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8208EE280AC602003975F4 /* Main.storyboard */; };
 		EA8208F2280AC604003975F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8208F1280AC604003975F4 /* Assets.xcassets */; };
 		EA8208F5280AC604003975F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8208F3280AC604003975F4 /* LaunchScreen.storyboard */; };
+		EA8208FF280AC9D2003975F4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208FE280AC9D2003975F4 /* SecondViewController.swift */; };
+		EA820901280AC9E0003975F4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA820900280AC9E0003975F4 /* ThirdViewController.swift */; };
+		EA820903280AC9FF003975F4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA820902280AC9FF003975F4 /* FourthViewController.swift */; };
+		EA906316280ACC6100DF43D1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906315280ACC6100DF43D1 /* Service.swift */; };
+		EA906318280ACF4F00DF43D1 /* TrackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906317280ACF4F00DF43D1 /* TrackResponse.swift */; };
+		EA90631C280AD75700DF43D1 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90631B280AD75600DF43D1 /* FirstViewModel.swift */; };
+		EA90631E280ADA1E00DF43D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90631D280ADA1E00DF43D1 /* Extensions.swift */; };
+		EA906322280ADDA400DF43D1 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906320280ADDA400DF43D1 /* FirstTableViewCell.swift */; };
+		EA906323280ADDA400DF43D1 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA906321280ADDA400DF43D1 /* FirstTableViewCell.xib */; };
+		EA906326280AE2EB00DF43D1 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906325280AE2EB00DF43D1 /* NavBarView.swift */; };
+		EA906328280AE30300DF43D1 /* NavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA906327280AE30300DF43D1 /* NavBarView.xib */; };
+		EA90632A280AE64E00DF43D1 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906329280AE64E00DF43D1 /* XibView.swift */; };
+		EA90632C280AEC9000DF43D1 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90632B280AEC9000DF43D1 /* SecondViewModel.swift */; };
+		EA90632F280AF1CC00DF43D1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90632D280AF1CB00DF43D1 /* SecondTableViewCell.swift */; };
+		EA906330280AF1CC00DF43D1 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA90632E280AF1CB00DF43D1 /* SecondTableViewCell.xib */; };
+		EA906332280AF50300DF43D1 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906331280AF50300DF43D1 /* ThirdViewModel.swift */; };
+		EA906335280AF78300DF43D1 /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906333280AF78300DF43D1 /* ThirdCollectionViewCell.swift */; };
+		EA906336280AF78300DF43D1 /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA906334280AF78300DF43D1 /* ThirdCollectionViewCell.xib */; };
+		EA906338280AFF6A00DF43D1 /* FourtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906337280AFF6A00DF43D1 /* FourtViewModel.swift */; };
+		EA90633B280B033A00DF43D1 /* FourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906339280B033A00DF43D1 /* FourthCollectionViewCell.swift */; };
+		EA90633C280B033A00DF43D1 /* FourthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA90633A280B033A00DF43D1 /* FourthCollectionViewCell.xib */; };
+		EA90633E280B170600DF43D1 /* CellCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90633D280B170600DF43D1 /* CellCustomView.swift */; };
+		EA906340280B171200DF43D1 /* CellCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA90633F280B171200DF43D1 /* CellCustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +46,34 @@
 		EA8208E5280AC602003975F4 /* KocSistemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KocSistemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8208E8280AC602003975F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8208EA280AC602003975F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA8208EC280AC602003975F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA8208EC280AC602003975F4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		EA8208EF280AC602003975F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA8208F1280AC604003975F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8208F4280AC604003975F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8208F6280AC604003975F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8208FE280AC9D2003975F4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EA820900280AC9E0003975F4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		EA820902280AC9FF003975F4 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		EA906315280ACC6100DF43D1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		EA906317280ACF4F00DF43D1 /* TrackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResponse.swift; sourceTree = "<group>"; };
+		EA90631B280AD75600DF43D1 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		EA90631D280ADA1E00DF43D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA906320280ADDA400DF43D1 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		EA906321280ADDA400DF43D1 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		EA906325280AE2EB00DF43D1 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		EA906327280AE30300DF43D1 /* NavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
+		EA906329280AE64E00DF43D1 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		EA90632B280AEC9000DF43D1 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		EA90632D280AF1CB00DF43D1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		EA90632E280AF1CB00DF43D1 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		EA906331280AF50300DF43D1 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
+		EA906333280AF78300DF43D1 /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA906334280AF78300DF43D1 /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA906337280AFF6A00DF43D1 /* FourtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourtViewModel.swift; sourceTree = "<group>"; };
+		EA906339280B033A00DF43D1 /* FourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA90633A280B033A00DF43D1 /* FourthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA90633D280B170600DF43D1 /* CellCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCustomView.swift; sourceTree = "<group>"; };
+		EA90633F280B171200DF43D1 /* CellCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +102,6 @@
 				B5C087FD1BC14CA7EC0541B4 /* Pods-KocSistemDemo.debug.xcconfig */,
 				E3A0C92E05FBD034B5B59DBF /* Pods-KocSistemDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +126,94 @@
 		EA8208E7280AC602003975F4 /* KocSistemDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EA906313280ACC4A00DF43D1 /* Model */,
+				EA906314280ACC5200DF43D1 /* Service */,
+				EA8208FC280AC9AA003975F4 /* ViewControllers */,
+				EA90631A280AD73800DF43D1 /* ViewModels */,
+				EA90631F280ADD8500DF43D1 /* Cells */,
+				EA906324280AE2D600DF43D1 /* CustomViews */,
+				EA8208FD280AC9B8003975F4 /* Storyboards */,
 				EA8208E8280AC602003975F4 /* AppDelegate.swift */,
 				EA8208EA280AC602003975F4 /* SceneDelegate.swift */,
-				EA8208EC280AC602003975F4 /* ViewController.swift */,
-				EA8208EE280AC602003975F4 /* Main.storyboard */,
 				EA8208F1280AC604003975F4 /* Assets.xcassets */,
-				EA8208F3280AC604003975F4 /* LaunchScreen.storyboard */,
 				EA8208F6280AC604003975F4 /* Info.plist */,
+				EA90631D280ADA1E00DF43D1 /* Extensions.swift */,
+				EA906329280AE64E00DF43D1 /* XibView.swift */,
 			);
 			path = KocSistemDemo;
+			sourceTree = "<group>";
+		};
+		EA8208FC280AC9AA003975F4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA8208EC280AC602003975F4 /* FirstViewController.swift */,
+				EA8208FE280AC9D2003975F4 /* SecondViewController.swift */,
+				EA820900280AC9E0003975F4 /* ThirdViewController.swift */,
+				EA820902280AC9FF003975F4 /* FourthViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA8208FD280AC9B8003975F4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EA8208EE280AC602003975F4 /* Main.storyboard */,
+				EA8208F3280AC604003975F4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EA906313280ACC4A00DF43D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA906317280ACF4F00DF43D1 /* TrackResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA906314280ACC5200DF43D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EA906315280ACC6100DF43D1 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EA90631A280AD73800DF43D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA90631B280AD75600DF43D1 /* FirstViewModel.swift */,
+				EA90632B280AEC9000DF43D1 /* SecondViewModel.swift */,
+				EA906331280AF50300DF43D1 /* ThirdViewModel.swift */,
+				EA906337280AFF6A00DF43D1 /* FourtViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA90631F280ADD8500DF43D1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EA906320280ADDA400DF43D1 /* FirstTableViewCell.swift */,
+				EA906321280ADDA400DF43D1 /* FirstTableViewCell.xib */,
+				EA90632D280AF1CB00DF43D1 /* SecondTableViewCell.swift */,
+				EA90632E280AF1CB00DF43D1 /* SecondTableViewCell.xib */,
+				EA906333280AF78300DF43D1 /* ThirdCollectionViewCell.swift */,
+				EA906334280AF78300DF43D1 /* ThirdCollectionViewCell.xib */,
+				EA906339280B033A00DF43D1 /* FourthCollectionViewCell.swift */,
+				EA90633A280B033A00DF43D1 /* FourthCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EA906324280AE2D600DF43D1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EA906325280AE2EB00DF43D1 /* NavBarView.swift */,
+				EA906327280AE30300DF43D1 /* NavBarView.xib */,
+				EA90633D280B170600DF43D1 /* CellCustomView.swift */,
+				EA90633F280B171200DF43D1 /* CellCustomView.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +276,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA906340280B171200DF43D1 /* CellCustomView.xib in Resources */,
 				EA8208F5280AC604003975F4 /* LaunchScreen.storyboard in Resources */,
+				EA906330280AF1CC00DF43D1 /* SecondTableViewCell.xib in Resources */,
 				EA8208F2280AC604003975F4 /* Assets.xcassets in Resources */,
+				EA906323280ADDA400DF43D1 /* FirstTableViewCell.xib in Resources */,
+				EA90633C280B033A00DF43D1 /* FourthCollectionViewCell.xib in Resources */,
+				EA906336280AF78300DF43D1 /* ThirdCollectionViewCell.xib in Resources */,
 				EA8208F0280AC602003975F4 /* Main.storyboard in Resources */,
+				EA906328280AE30300DF43D1 /* NavBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +337,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA8208ED280AC602003975F4 /* ViewController.swift in Sources */,
+				EA90632C280AEC9000DF43D1 /* SecondViewModel.swift in Sources */,
+				EA820903280AC9FF003975F4 /* FourthViewController.swift in Sources */,
+				EA906316280ACC6100DF43D1 /* Service.swift in Sources */,
+				EA906318280ACF4F00DF43D1 /* TrackResponse.swift in Sources */,
+				EA8208FF280AC9D2003975F4 /* SecondViewController.swift in Sources */,
+				EA90633B280B033A00DF43D1 /* FourthCollectionViewCell.swift in Sources */,
+				EA906326280AE2EB00DF43D1 /* NavBarView.swift in Sources */,
+				EA906332280AF50300DF43D1 /* ThirdViewModel.swift in Sources */,
+				EA906335280AF78300DF43D1 /* ThirdCollectionViewCell.swift in Sources */,
+				EA90633E280B170600DF43D1 /* CellCustomView.swift in Sources */,
+				EA8208ED280AC602003975F4 /* FirstViewController.swift in Sources */,
+				EA90631E280ADA1E00DF43D1 /* Extensions.swift in Sources */,
+				EA820901280AC9E0003975F4 /* ThirdViewController.swift in Sources */,
+				EA906338280AFF6A00DF43D1 /* FourtViewModel.swift in Sources */,
 				EA8208E9280AC602003975F4 /* AppDelegate.swift in Sources */,
+				EA90632A280AE64E00DF43D1 /* XibView.swift in Sources */,
+				EA90632F280AF1CC00DF43D1 /* SecondTableViewCell.swift in Sources */,
+				EA906322280ADDA400DF43D1 /* FirstTableViewCell.swift in Sources */,
+				EA90631C280AD75700DF43D1 /* FirstViewModel.swift in Sources */,
 				EA8208EB280AC602003975F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
