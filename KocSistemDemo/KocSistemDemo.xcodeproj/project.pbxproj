@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D56F4A761C4A9A2E807C89 /* Pods_KocSistemDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BBE9BD3DE75EEDEF7558ED /* Pods_KocSistemDemo.framework */; };
 		EA8208E9280AC602003975F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208E8280AC602003975F4 /* AppDelegate.swift */; };
 		EA8208EB280AC602003975F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208EA280AC602003975F4 /* SceneDelegate.swift */; };
 		EA8208ED280AC602003975F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8208EC280AC602003975F4 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5C087FD1BC14CA7EC0541B4 /* Pods-KocSistemDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KocSistemDemo.debug.xcconfig"; path = "Target Support Files/Pods-KocSistemDemo/Pods-KocSistemDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E0BBE9BD3DE75EEDEF7558ED /* Pods_KocSistemDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KocSistemDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A0C92E05FBD034B5B59DBF /* Pods-KocSistemDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KocSistemDemo.release.xcconfig"; path = "Target Support Files/Pods-KocSistemDemo/Pods-KocSistemDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EA8208E5280AC602003975F4 /* KocSistemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KocSistemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8208E8280AC602003975F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8208EA280AC602003975F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D56F4A761C4A9A2E807C89 /* Pods_KocSistemDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45F515DDFBF5E845DA5D6E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0BBE9BD3DE75EEDEF7558ED /* Pods_KocSistemDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D631A001C9C8A2A20DB9E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5C087FD1BC14CA7EC0541B4 /* Pods-KocSistemDemo.debug.xcconfig */,
+				E3A0C92E05FBD034B5B59DBF /* Pods-KocSistemDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA8208DC280AC602003975F4 = {
 			isa = PBXGroup;
 			children = (
 				EA8208E7280AC602003975F4 /* KocSistemDemo */,
 				EA8208E6280AC602003975F4 /* Products */,
+				5D631A001C9C8A2A20DB9E05 /* Pods */,
+				45F515DDFBF5E845DA5D6E3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA8208F9280AC604003975F4 /* Build configuration list for PBXNativeTarget "KocSistemDemo" */;
 			buildPhases = (
+				9AC11B00781FBA2EC56CC723 /* [CP] Check Pods Manifest.lock */,
 				EA8208E1280AC602003975F4 /* Sources */,
 				EA8208E2280AC602003975F4 /* Frameworks */,
 				EA8208E3280AC602003975F4 /* Resources */,
+				99943731D295F17189FB2E17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99943731D295F17189FB2E17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KocSistemDemo/Pods-KocSistemDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KocSistemDemo/Pods-KocSistemDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KocSistemDemo/Pods-KocSistemDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC11B00781FBA2EC56CC723 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KocSistemDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA8208E1280AC602003975F4 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EA8208FA280AC604003975F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C087FD1BC14CA7EC0541B4 /* Pods-KocSistemDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EA8208FB280AC604003975F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A0C92E05FBD034B5B59DBF /* Pods-KocSistemDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
