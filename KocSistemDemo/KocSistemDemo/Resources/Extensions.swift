@@ -86,3 +86,14 @@ extension NSNotification.Name {
     static let textUpdate = NSNotification.Name("textUpdate")
     static let deleteItem = NSNotification.Name("deleteItem")
 }
+
+extension Array where Element: Equatable {
+   // Remove first collection element that is equal to the given `object`:
+   mutating func remove(object: Element) {
+       guard let index = firstIndex(of: object) else {return}
+       remove(at: index)
+   }
+
+}
+
+

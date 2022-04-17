@@ -28,6 +28,7 @@ class SecondTableViewCell: UITableViewCell {
         artistLabel.text = data.artistName
         trackLabel.text = data.trackName
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -30,37 +30,31 @@ class NavBarView: UIView {
         openEditAlert()
     }
     
-    public func changeText (text : String) {
-        navBarNameLabel.text = text
-    }
-    
+//    Setting alert view
     func openEditAlert() {
-
         //Create Alert Controller
-        let alert9 = UIAlertController (title: "Edit:", message: nil, preferredStyle: UIAlertController.Style.alert)
-
+        let alert = UIAlertController (title: "Edit:", message: nil, preferredStyle: UIAlertController.Style.alert)
+        
         //Create Cancel Action
-        let cancel9 = UIAlertAction(title: "CANCEL", style: UIAlertAction.Style.cancel, handler: nil)
-
-        alert9.addAction(cancel9)
-
+        let cancel = UIAlertAction(title: "CANCEL", style: UIAlertAction.Style.cancel, handler: nil)
+        alert.addAction(cancel)
 
         //Create OK Action
-        let ok9 = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action: UIAlertAction) in print("OK")
-            let textfield = alert9.textFields?[0]
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action: UIAlertAction) in print("OK")
+            let textfield = alert.textFields?[0]
             print(textfield?.text!)
             self.navBarNameLabel.text = textfield?.text!
             NotificationCenter.default.post(name: .changeText, object: nil, userInfo: ["newText" : textfield?.text!])
         }
 
-        alert9.addAction(ok9)
+        alert.addAction(okAction)
 
         //Add Text Field
-        alert9.addTextField { (textfield: UITextField) in
+        alert.addTextField { (textfield: UITextField) in
             textfield.placeholder = "Enter anything"
         }
         
         //Present Alert Controller
-        self.window?.rootViewController?.present(alert9, animated: true, completion: nil)
+        self.window?.rootViewController?.present(alert, animated: true, completion: nil)
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class Service {
-    
+//    fetching data via alamofire
     func fetchData(callback : @escaping (Response) -> Void) {
         AF.request("https://itunes.apple.com/search?term=jack+johnson", method: .get, encoding: JSONEncoding.default).response { response in
             guard let data = response.data else {return}

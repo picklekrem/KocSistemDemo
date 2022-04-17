@@ -109,6 +109,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EA4D9188280CB94D003E7928 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA90631D280ADA1E00DF43D1 /* Extensions.swift */,
+				EA906329280AE64E00DF43D1 /* XibView.swift */,
+				EA8208E8280AC602003975F4 /* AppDelegate.swift */,
+				EA8208EA280AC602003975F4 /* SceneDelegate.swift */,
+				EA8208F1280AC604003975F4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EA8208DC280AC602003975F4 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 		EA8208E7280AC602003975F4 /* KocSistemDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D9188280CB94D003E7928 /* Resources */,
 				EA906313280ACC4A00DF43D1 /* Model */,
 				EA906314280ACC5200DF43D1 /* Service */,
 				EA8208FC280AC9AA003975F4 /* ViewControllers */,
@@ -137,12 +150,7 @@
 				EA90631F280ADD8500DF43D1 /* Cells */,
 				EA906324280AE2D600DF43D1 /* CustomViews */,
 				EA8208FD280AC9B8003975F4 /* Storyboards */,
-				EA8208E8280AC602003975F4 /* AppDelegate.swift */,
-				EA8208EA280AC602003975F4 /* SceneDelegate.swift */,
-				EA8208F1280AC604003975F4 /* Assets.xcassets */,
 				EA8208F6280AC604003975F4 /* Info.plist */,
-				EA90631D280ADA1E00DF43D1 /* Extensions.swift */,
-				EA906329280AE64E00DF43D1 /* XibView.swift */,
 			);
 			path = KocSistemDemo;
 			sourceTree = "<group>";

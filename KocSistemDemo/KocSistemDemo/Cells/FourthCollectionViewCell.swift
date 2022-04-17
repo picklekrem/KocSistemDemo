@@ -8,6 +8,7 @@
 import UIKit
 import SDWebImage
 
+//Setting the protocol for delete item
 protocol SelectedItemDeleteProtocol {
     func deleteSelectedItem(trackID: Int)
 }
@@ -44,7 +45,7 @@ class FourthCollectionViewCell: UICollectionViewCell {
         fourthImageView.sd_setImage(with: imageUrl, completed: nil)
         trackID = data.trackId ?? 0
     }
-    
+//    trigger the delete protocol
     @IBAction func deleteItemClicked(_ sender: UIButton) {
         delegate?.deleteSelectedItem(trackID: trackID)
     }

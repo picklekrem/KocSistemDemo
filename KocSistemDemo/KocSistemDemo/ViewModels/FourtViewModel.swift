@@ -29,7 +29,7 @@ class FourthViewModel : NSObject, SelectedItemDeleteProtocol {
         collection.delegate = self
         collection.dataSource = self
     }
-    
+//    Protocol action func
     func deleteSelectedItem(trackID: Int) {
         print(trackID)
         itemList.forEach { x in
@@ -63,12 +63,3 @@ extension FourthViewModel : UICollectionViewDelegate, UICollectionViewDataSource
     }
 }
 
-extension Array where Element: Equatable {
-
-   // Remove first collection element that is equal to the given `object`:
-   mutating func remove(object: Element) {
-       guard let index = firstIndex(of: object) else {return}
-       remove(at: index)
-   }
-
-}

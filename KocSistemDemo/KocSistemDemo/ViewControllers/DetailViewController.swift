@@ -24,8 +24,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-//        print(detailItem)
     }
     
     func updateUI(data : TrackResponse) {
@@ -40,7 +38,7 @@ class DetailViewController: UIViewController {
             self.artistWebURL = data.artistViewUrl ?? ""
         }
     }
-    
+//    Show safari view for artist page
     @IBAction func artistPageClicked(_ sender: UIButton) {
         if artistWebURL == "" {
             self.makeAlert(titleInput: "Sorry", messageInput: "This artist has no page :(")

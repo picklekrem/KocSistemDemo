@@ -7,8 +7,6 @@
 
 import Foundation
 import UIKit
-//import Alamofire
-
 
 class FirstViewModel : NSObject {
     
@@ -19,21 +17,23 @@ class FirstViewModel : NSObject {
     
     override init() {
         super.init()
+//        fetching data
         apiService.fetchData { reponse in
             guard let data = reponse.results else {return}
             self.itemList = data
             self.didDataFetchedCompletion()
         }
+//        item delete notification set
         NotificationCenter.default.addObserver(self, selector: #selector(self.deleteItemObserver(_:)), name: .deleteItem, object: nil)
     }
-    
+//    tableview settings
     func setTableViewConfig(table : UITableView) {
         table.setDefaultConfig()
         table.register(FirstTableViewCell.nib(), forCellReuseIdentifier: FirstTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
     }
-    
+//    delete item action
     @objc func deleteItemObserver(_ sender : Notification) {
         let trackID = sender.userInfo?["deleteItem"] as? Int ?? 0
         itemList.forEach { x in
