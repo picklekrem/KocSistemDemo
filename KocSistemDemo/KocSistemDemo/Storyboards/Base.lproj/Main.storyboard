@@ -48,11 +48,22 @@
                     <connections>
                         <outlet property="firstTableView" destination="zbY-TK-F4W" id="BlW-sM-jqb"/>
                         <outlet property="navBarView" destination="5dl-t0-uhh" id="8Gv-og-HaG"/>
+                        <segue destination="DE9-YH-1O1" kind="show" identifier="detailSegue" id="gkq-Ll-U44"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1262.3188405797102" y="952.90178571428567"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="sXX-a8-QAJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="DE9-YH-1O1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wtK-c1-uSk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPe-GY-dbs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="1546"/>
         </scene>
         <!--Second Tab-->
         <scene sceneID="2az-lv-nrO">
@@ -111,6 +122,7 @@
                         <outlet property="navBarView" destination="3lB-uE-fel" id="Yh3-4A-K4x"/>
                         <outlet property="resultCountLabel" destination="ESf-i4-jJY" id="xgm-3P-1VX"/>
                         <outlet property="secondTableView" destination="h6n-BJ-hVx" id="c6r-ZL-p8D"/>
+                        <segue destination="DE9-YH-1O1" kind="show" identifier="detailSegue" id="AOa-MK-ZMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJW-k8-asb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -172,6 +184,7 @@
                     <connections>
                         <outlet property="navBarView" destination="NWP-cz-BjP" id="m9E-aS-y64"/>
                         <outlet property="thirdCollectionView" destination="rNg-or-xU9" id="ADF-CC-B9p"/>
+                        <segue destination="DE9-YH-1O1" kind="show" identifier="detailSegue" id="ukg-Wz-tRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDZ-xq-FwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -200,17 +213,17 @@
                                 <rect key="frame" x="0.0" y="174" width="414" height="639"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R1S-zE-pLc">
-                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gxh-TE-Myx">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LaN-wD-fQD">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
@@ -233,6 +246,7 @@
                     <connections>
                         <outlet property="fourthCollectionView" destination="Lf9-Mh-HtP" id="kVT-Gd-2ST"/>
                         <outlet property="navBarView" destination="uh1-Tg-laO" id="1BB-FP-qtA"/>
+                        <segue destination="DE9-YH-1O1" kind="show" identifier="detailSegue" id="KHB-bn-lGe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pif-8o-niE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -261,6 +275,9 @@
             <point key="canvasLocation" x="-95.652173913043484" y="238.39285714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KHB-bn-lGe"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="1.circle" catalog="system" width="128" height="121"/>
         <image name="1.circle.fill" catalog="system" width="128" height="121"/>

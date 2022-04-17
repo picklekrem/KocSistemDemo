@@ -13,6 +13,7 @@ class ThirdViewModel : NSObject {
     let apiService = Service()
     var itemList : [TrackResponse] = []
     var didDataFetchedCompletion : () -> () = { }
+    var didDetailClicked : (TrackResponse) -> () = { item in}
     
     override init() {
         super.init()
@@ -42,10 +43,14 @@ extension ThirdViewModel : UICollectionViewDelegate, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let padding = 5
+            let padding = 2
             let width = (collectionView.frame.size.width - CGFloat(padding) * 2) / CGFloat(2)
-            let height = width / 200 * 110 // or what height you want to do
+            let height = width / 200 * 100 // or what height you want to do
             return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        didDetailClicked(itemList[indexPath.row])
     }
     
 }

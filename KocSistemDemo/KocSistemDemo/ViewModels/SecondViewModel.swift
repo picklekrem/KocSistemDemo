@@ -13,6 +13,7 @@ class SecondViewModel : NSObject {
     let apiService = Service()
     var itemList : [TrackResponse] = []
     var didDataFetchedCompletion : (Int) -> () = {count in}
+    var didDetailClicked : (TrackResponse) -> () = { item in}
     
     override init() {
         super.init()
@@ -43,5 +44,9 @@ extension SecondViewModel : UITableViewDelegate, UITableViewDataSource {
         let secondCell = tableView.dequeueReusableCell(withIdentifier: SecondTableViewCell.identifier, for: indexPath) as! SecondTableViewCell
         secondCell.loadData(data: itemList[indexPath.row])
         return secondCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didDetailClicked(itemList[indexPath.row])
     }
 }

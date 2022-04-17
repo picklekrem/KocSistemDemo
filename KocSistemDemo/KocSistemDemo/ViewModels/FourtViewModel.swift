@@ -13,6 +13,7 @@ class FourthViewModel : NSObject {
     let apiService = Service()
     var itemList : [TrackResponse] = []
     var didDataFetchedCompletion : () -> () = { }
+    var didDetailClicked : (TrackResponse) -> () = { item in}
     
     override init() {
         super.init()
@@ -39,5 +40,13 @@ extension FourthViewModel : UICollectionViewDelegate, UICollectionViewDataSource
         let fourthCell = collectionView.dequeueReusableCell(withReuseIdentifier: FourthCollectionViewCell.identifier, for: indexPath) as! FourthCollectionViewCell
         fourthCell.loadData(data: itemList[indexPath.row])
         return fourthCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        didDetailClicked(itemList[indexPath.row])
     }
 }

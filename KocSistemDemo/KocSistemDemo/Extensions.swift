@@ -40,3 +40,48 @@ extension UIView {
     }
 }
 
+extension Formatter {
+
+    static let getCurrency : NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        return formatter
+    }()
+}
+
+extension Numeric {
+    var getCurrency : String { return Formatter.getCurrency.string(for: self) ?? ""}
+}
+
+extension String {
+    func getDisplayDate() -> String{
+            var dateText = ""
+            let dateSplit = split(separator: "T")
+            if(dateSplit.count > 0){
+                let dateFormatter = DateFormatter(dateFormat: "yyyy-MM-dd")
+                if let date2 = dateFormatter.date(from:String(dateSplit[0])){
+                    dateText = DateFormatter().dateToString(date: date2, format: "dd.MM.yyyy")
+                }
+            }
+            return dateText
+        }
+}
+
+extension DateFormatter{
+    func dateToString(date:Date, format:String) -> String {
+        locale = Locale(identifier: "tr_tr")
+        setLocalizedDateFormatFromTemplate(format)
+        return string(from: date)
+    }
+    
+    convenience init(dateFormat:String) {
+        self.init()
+        self.dateFormat = dateFormat
+    }
+}
+
+extension NSNotification.Name {
+    static let changeText = NSNotification.Name("changeText")
+    static let textUpdate = NSNotification.Name("textUpdate")
+}

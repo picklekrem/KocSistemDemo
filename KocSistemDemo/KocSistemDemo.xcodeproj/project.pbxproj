@@ -37,6 +37,8 @@
 		EA90633C280B033A00DF43D1 /* FourthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA90633A280B033A00DF43D1 /* FourthCollectionViewCell.xib */; };
 		EA90633E280B170600DF43D1 /* CellCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90633D280B170600DF43D1 /* CellCustomView.swift */; };
 		EA906340280B171200DF43D1 /* CellCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA90633F280B171200DF43D1 /* CellCustomView.xib */; };
+		EA906342280B524300DF43D1 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA906341280B524300DF43D1 /* Detail.storyboard */; };
+		EA906344280B526800DF43D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA906343280B526800DF43D1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		EA90633A280B033A00DF43D1 /* FourthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthCollectionViewCell.xib; sourceTree = "<group>"; };
 		EA90633D280B170600DF43D1 /* CellCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCustomView.swift; sourceTree = "<group>"; };
 		EA90633F280B171200DF43D1 /* CellCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCustomView.xib; sourceTree = "<group>"; };
+		EA906341280B524300DF43D1 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		EA906343280B526800DF43D1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				EA8208FE280AC9D2003975F4 /* SecondViewController.swift */,
 				EA820900280AC9E0003975F4 /* ThirdViewController.swift */,
 				EA820902280AC9FF003975F4 /* FourthViewController.swift */,
+				EA906343280B526800DF43D1 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EA8208EE280AC602003975F4 /* Main.storyboard */,
+				EA906341280B524300DF43D1 /* Detail.storyboard */,
 				EA8208F3280AC604003975F4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -279,6 +285,7 @@
 				EA906340280B171200DF43D1 /* CellCustomView.xib in Resources */,
 				EA8208F5280AC604003975F4 /* LaunchScreen.storyboard in Resources */,
 				EA906330280AF1CC00DF43D1 /* SecondTableViewCell.xib in Resources */,
+				EA906342280B524300DF43D1 /* Detail.storyboard in Resources */,
 				EA8208F2280AC604003975F4 /* Assets.xcassets in Resources */,
 				EA906323280ADDA400DF43D1 /* FirstTableViewCell.xib in Resources */,
 				EA90633C280B033A00DF43D1 /* FourthCollectionViewCell.xib in Resources */,
@@ -343,6 +350,7 @@
 				EA906318280ACF4F00DF43D1 /* TrackResponse.swift in Sources */,
 				EA8208FF280AC9D2003975F4 /* SecondViewController.swift in Sources */,
 				EA90633B280B033A00DF43D1 /* FourthCollectionViewCell.swift in Sources */,
+				EA906344280B526800DF43D1 /* DetailViewController.swift in Sources */,
 				EA906326280AE2EB00DF43D1 /* NavBarView.swift in Sources */,
 				EA906332280AF50300DF43D1 /* ThirdViewModel.swift in Sources */,
 				EA906335280AF78300DF43D1 /* ThirdCollectionViewCell.swift in Sources */,

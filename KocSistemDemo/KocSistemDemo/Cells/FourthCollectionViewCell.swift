@@ -32,8 +32,8 @@ class FourthCollectionViewCell: UICollectionViewCell {
     func loadData(data : TrackResponse) {
         artistLabel.text = data.artistName
         trackLabel.text = data.trackName
-        dateLabel.text = data.releaseDate
-        priceLabel.text = "\(data.trackPrice)"
+        dateLabel.text = data.releaseDate?.getDisplayDate() ?? ""
+        priceLabel.text = data.trackPrice?.getCurrency ?? ""
         let imageUrl = URL(string: data.artworkUrl100)
         fourthImageView.sd_setImage(with: imageUrl, completed: nil)
     }

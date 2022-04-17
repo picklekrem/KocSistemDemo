@@ -15,6 +15,7 @@ class FirstViewModel : NSObject {
     let apiService = Service()
     var itemList : [TrackResponse] = []
     var didDataFetchedCompletion : () -> () = { }
+    var didDetailClicked : (TrackResponse) -> () = { item in}
     
     override init() {
         super.init()
@@ -44,6 +45,8 @@ extension FirstViewModel : UITableViewDataSource, UITableViewDelegate {
         firstCell.loadData(data: itemList[indexPath.row])
         return firstCell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didDetailClicked(itemList[indexPath.row])
+    }
     
 }
