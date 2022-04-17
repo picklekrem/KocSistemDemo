@@ -24,6 +24,7 @@ class FirstViewModel : NSObject {
             self.itemList = data
             self.didDataFetchedCompletion()
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(self.deleteItemObserver(_:)), name: .deleteItem, object: nil)
     }
     
     func setTableViewConfig(table : UITableView) {
@@ -33,6 +34,15 @@ class FirstViewModel : NSObject {
         table.dataSource = self
     }
     
+    @objc func deleteItemObserver(_ sender : Notification) {
+        let trackID = sender.userInfo?["deleteItem"] as? Int ?? 0
+        itemList.forEach { x in
+            if x.trackId == trackID {
+                itemList.remove(object: x)
+                didDataFetchedCompletion()
+            }
+        }
+    }
 }
 
 extension FirstViewModel : UITableViewDataSource, UITableViewDelegate {

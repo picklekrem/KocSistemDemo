@@ -17,6 +17,7 @@ class SecondViewModel : NSObject {
     
     override init() {
         super.init()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.deleteItemObserver(_:)), name: .deleteItem, object: nil)
     }
     
     func getData() {
@@ -32,6 +33,16 @@ class SecondViewModel : NSObject {
         table.register(SecondTableViewCell.nib(), forCellReuseIdentifier: SecondTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
+    }
+    
+    @objc func deleteItemObserver(_ sender : Notification) {
+        let trackID = sender.userInfo?["deleteItem"] as? Int ?? 0
+        itemList.forEach { x in
+            if x.trackId == trackID {
+                itemList.remove(object: x)
+                didDataFetchedCompletion(itemList.count)
+            }
+        }
     }
 }
 

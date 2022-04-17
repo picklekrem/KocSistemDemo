@@ -28,9 +28,7 @@ class FourthViewController: UIViewController {
             self.selectedItem = item
             self.performSegue(withIdentifier: "detailSegue", sender: nil)
         }
-        
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {

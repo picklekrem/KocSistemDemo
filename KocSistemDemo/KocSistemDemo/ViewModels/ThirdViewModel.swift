@@ -22,12 +22,23 @@ class ThirdViewModel : NSObject {
             self.itemList = data
             self.didDataFetchedCompletion()
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(self.deleteItemObserver(_:)), name: .deleteItem, object: nil)
     }
     
     func setCollectionViewConfig(collection : UICollectionView) {
         collection.register(ThirdCollectionViewCell.nib(), forCellWithReuseIdentifier: ThirdCollectionViewCell.identifier)
         collection.delegate = self
         collection.dataSource = self
+    }
+    
+    @objc func deleteItemObserver(_ sender : Notification) {
+        let trackID = sender.userInfo?["deleteItem"] as? Int ?? 0
+        itemList.forEach { x in
+            if x.trackId == trackID {
+                itemList.remove(object: x)
+                didDataFetchedCompletion()
+            }
+        }
     }
     
 }

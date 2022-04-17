@@ -13,7 +13,7 @@ struct Response : Decodable {
     var results : [TrackResponse]?
 }
 
-struct TrackResponse : Decodable {
+struct TrackResponse : Decodable, Equatable {
     var artistId : Int?
     var artistName :String?
     var artistViewUrl : String?

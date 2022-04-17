@@ -84,4 +84,5 @@ extension DateFormatter{
 extension NSNotification.Name {
     static let changeText = NSNotification.Name("changeText")
     static let textUpdate = NSNotification.Name("textUpdate")
+    static let deleteItem = NSNotification.Name("deleteItem")
 }

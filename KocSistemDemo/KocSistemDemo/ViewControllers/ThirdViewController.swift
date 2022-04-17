@@ -28,13 +28,7 @@ class ThirdViewController: UIViewController {
             self.selectedItem = item
             self.performSegue(withIdentifier: "detailSegue", sender: nil)
         }
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.observerUpdate(_:)), name: .changeText, object: nil)
     }
-//    @objc func observerUpdate(_ sender : Notification) {
-//        let text = sender.userInfo?["newText"] as? String ?? ""
-//        print(text)
-//        NotificationCenter.default.post(name: .textUpdate, object: nil, userInfo: ["updateText" : text])
-//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {

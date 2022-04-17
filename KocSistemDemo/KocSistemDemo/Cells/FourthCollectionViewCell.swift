@@ -8,6 +8,11 @@
 import UIKit
 import SDWebImage
 
+protocol SelectedItemDeleteProtocol {
+    func deleteSelectedItem(trackID: Int)
+}
+
+
 class FourthCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "FourthCollectionViewCell"
@@ -22,13 +27,14 @@ class FourthCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    var delegate: SelectedItemDeleteProtocol? = nil
+    var trackID = Int()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         backView.cardView()
     }
 
-    
     func loadData(data : TrackResponse) {
         artistLabel.text = data.artistName
         trackLabel.text = data.trackName
@@ -36,5 +42,10 @@ class FourthCollectionViewCell: UICollectionViewCell {
         priceLabel.text = data.trackPrice?.getCurrency ?? ""
         let imageUrl = URL(string: data.artworkUrl100)
         fourthImageView.sd_setImage(with: imageUrl, completed: nil)
+        trackID = data.trackId ?? 0
+    }
+    
+    @IBAction func deleteItemClicked(_ sender: UIButton) {
+        delegate?.deleteSelectedItem(trackID: trackID)
     }
 }

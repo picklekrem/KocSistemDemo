@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FourthViewModel : NSObject {
+class FourthViewModel : NSObject, SelectedItemDeleteProtocol {
     
     let apiService = Service()
     var itemList : [TrackResponse] = []
@@ -29,6 +29,17 @@ class FourthViewModel : NSObject {
         collection.delegate = self
         collection.dataSource = self
     }
+    
+    func deleteSelectedItem(trackID: Int) {
+        print(trackID)
+        itemList.forEach { x in
+            if x.trackId == trackID {
+                itemList.remove(object: x)
+                didDataFetchedCompletion()
+            }
+        }
+        NotificationCenter.default.post(name: .deleteItem, object: nil, userInfo: ["deleteItem" : trackID])
+    }
 }
 
 extension FourthViewModel : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -39,6 +50,7 @@ extension FourthViewModel : UICollectionViewDelegate, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let fourthCell = collectionView.dequeueReusableCell(withReuseIdentifier: FourthCollectionViewCell.identifier, for: indexPath) as! FourthCollectionViewCell
         fourthCell.loadData(data: itemList[indexPath.row])
+        fourthCell.delegate = self
         return fourthCell
     }
     
@@ -49,4 +61,14 @@ extension FourthViewModel : UICollectionViewDelegate, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         didDetailClicked(itemList[indexPath.row])
     }
+}
+
+extension Array where Element: Equatable {
+
+   // Remove first collection element that is equal to the given `object`:
+   mutating func remove(object: Element) {
+       guard let index = firstIndex(of: object) else {return}
+       remove(at: index)
+   }
+
 }
